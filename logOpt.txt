@@ -1,0 +1,593 @@
+2023-12-07 07:34:09.844386: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-07 07:34:09.850128: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-07 07:34:09.859116: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-07 07:34:09.876125: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+ 
+-------------------------------------------------------------------------------
+|                               DAFoam v3.0.7                                 |
+-------------------------------------------------------------------------------
+ 
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1812 OPENFOAM=1812
+Arch   : "LSB;label=32;scalar=64"
+Exec   : decomposePar
+Date   : Dec 07 2023
+Time   : 07:34:12
+Host   : 58346f0f493c
+PID    : 2007
+I/O    : uncollated
+Case   : /home/dafoamuser/mount
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+
+
+Decomposing mesh region0
+
+Create mesh
+
+Calculating distribution of cells
+Selecting decompositionMethod scotch [4]
+
+Finished decomposition in 0.01 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+
+Processor 0
+    Number of cells = 288
+    Number of faces shared with processor 1 = 26
+    Number of faces shared with processor 3 = 11
+    Number of processor patches = 2
+    Number of processor faces = 37
+    Number of boundary faces = 613
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+
+Processor 1
+    Number of cells = 288
+    Number of faces shared with processor 0 = 26
+    Number of faces shared with processor 2 = 12
+    Number of faces shared with processor 3 = 1
+    Number of processor patches = 3
+    Number of processor faces = 39
+    Number of boundary faces = 611
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+
+Processor 2
+    Number of cells = 288
+    Number of faces shared with processor 1 = 12
+    Number of faces shared with processor 3 = 24
+    Number of processor patches = 2
+    Number of processor faces = 36
+    Number of boundary faces = 612
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+
+Processor 3
+    Number of cells = 288
+    Number of faces shared with processor 0 = 11
+    Number of faces shared with processor 1 = 1
+    Number of faces shared with processor 2 = 24
+    Number of processor patches = 3
+    Number of processor faces = 36
+    Number of boundary faces = 612
+
+Number of processor faces = 74
+Max number of cells = 288 (0% above average 288)
+Max number of processor patches = 3 (20% above average 2.5)
+Max number of faces between processors = 39 (5.405405405405405% above average 37)
+
+Time = 0
+
+Processor 0: field transfer
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+Processor 1: field transfer
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+Processor 2: field transfer
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+Processor 3: field transfer
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+
+End
+
+I/O    : uncollated
+Case   : /home/dafoamuser/mount
+nProcs : 4
+Hosts  :
+(
+    (58346f0f493c 4)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+Create time
+
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+Create mesh for time = 0
+Initializing mesh and runtime for DASolver
+DAOpton initialized 
+I/O    : uncollated
+Case   : /home/dafoamuser/mount
+nProcs : 4
+Hosts  :
+(
+    (58346f0f493c 4)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+Create time
+
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+Create mesh for time = 0
+Initializing mesh and runtime for DASolver
+DAOpton initialized 
+Initializing fields for DASimpleFoam
+Create simpleControl.
+
+SIMPLE: no convergence criteria found. Calculations will run for 3000 steps.
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Creating source term. 
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model SpalartAllmarasFv3
+Selecting patchDistMethod meshWaveFrozen
+No MRF models present
+
+Adjoint States: 
+4
+(
+U volVectorState
+nuTilda modelState
+phi surfaceScalarState
+p volScalarState
+)
+Global Cells: 1152
+Global Faces: 4754
+Global Xv: 7812
+Undecomposed points: 2450
+Global Adjoint States: 10514
+
+SIMPLE: no convergence criteria found. Calculations will run for 3000 steps.
+
+DACheckMesh Thresholds: 
+maxNonOrth: 70
+maxSkewness: 4
+maxAspectRatio: 1000
+maxIncorrectlyOrientedFaces: 0
+    Adding all faces of patches 1(inlet) ...
+    Found matching patch inlet with 0 faces.
+    Adding all faces of patches 1(outlet) ...
+    Found matching patch outlet with 0 faces.
+Initializing fields for DASimpleFoam
+Create simpleControl.
+
+SIMPLE: no convergence criteria found. Calculations will run for 3000 steps.
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Creating source term. 
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model SpalartAllmarasFv3
+Selecting patchDistMethod meshWaveFrozen
+No MRF models present
+
+Adjoint States: 
+4
+(
+U volVectorState
+nuTilda modelState
+phi surfaceScalarState
+p volScalarState
+)
+Global Cells: 1152
+Global Faces: 4754
+Global Xv: 7812
+Undecomposed points: 2450
+Global Adjoint States: 10514
+
+SIMPLE: no convergence criteria found. Calculations will run for 3000 steps.
+
+DACheckMesh Thresholds: 
+maxNonOrth: 70
+maxSkewness: 4
+maxAspectRatio: 1000
+maxIncorrectlyOrientedFaces: 0
+    Adding all faces of patches 1(inlet) ...
+    Found matching patch inlet with 0 faces.
+    Adding all faces of patches 1(outlet) ...
+    Found matching patch outlet with 0 faces.
+DAFoam option dictionary: 
+{
+    solverName      DASimpleFoam;
+    primalMinResTol 1e-06;
+    primalBC
+    {
+        U0
+        {
+            variable        U;
+            patches         1 ( inlet );
+            value           3 ( 0.1 0 0 );
+        }
+        p0
+        {
+            variable        p;
+            patches         1 ( outlet );
+            value           1 ( 0 );
+        }
+        nuTilda0
+        {
+            variable        nuTilda;
+            patches         1 ( inlet );
+            value           1 ( 0.0001 );
+        }
+        useWallFunction 1;
+    }
+    normalizeStates
+    {
+        U               0.1;
+        p               0.005000000000000001;
+        nut             0.001;
+        phi             1;
+    }
+    objFunc
+    {
+        PL
+        {
+            part1
+            {
+                type            totalPressure;
+                source          patchToFace;
+                patches         1 ( inlet );
+                scale           200;
+                addToAdjoint    1;
+            }
+            part2
+            {
+                type            totalPressure;
+                source          patchToFace;
+                patches         1 ( outlet );
+                scale           -200;
+                addToAdjoint    1;
+            }
+        }
+    }
+    designVar
+    {
+        alphaPorosity
+        {
+            designVarType   Field;
+            fieldName       alphaPorosity;
+            fieldType       scalar;
+        }
+    }
+    designSurfaces  1 ( wallBoundary );
+    couplingInfo
+    {
+        aerostructural
+        {
+            active          0;
+            pRef            0;
+            propMovement    0;
+            couplingSurfaceGroups
+            {
+                wingGroup       2 ( wing wing_te );
+            }
+        }
+        aerothermal
+        {
+            active          0;
+            couplingSurfaceGroups
+            {
+                wallGroup       1 ( fin_wall );
+            }
+        }
+        aeroacoustic
+        {
+            active          0;
+            pRef            0;
+            couplingSurfaceGroups
+            {
+                blade1Group     2 ( blade1_ps blade1_ss );
+                blade2Group     1 ( blade2 );
+            }
+        }
+    }
+    aeroPropulsive
+    {
+    }
+    primalOnly      0;
+    fvSource
+    {
+    }
+    adjEqnSolMethod Krylov;
+    primalVarBounds
+    {
+        UMax            1000;
+        UMin            -1000;
+        pMax            500000;
+        pMin            20000;
+        p_rghMax        500000;
+        p_rghMin        20000;
+        eMax            500000;
+        eMin            100000;
+        TMax            1000;
+        TMin            100;
+        hMax            500000;
+        hMin            100000;
+        DMax            1e+16;
+        DMin            -1e+16;
+        rhoMax          5;
+        rhoMin          0.2;
+        nuTildaMax      1e+16;
+        nuTildaMin      1e-16;
+        kMax            1e+16;
+        kMin            1e-16;
+        omegaMax        1e+16;
+        omegaMin        1e-16;
+        epsilonMax      1e+16;
+        epsilonMin      1e-16;
+        ReThetatMax     1e+16;
+        ReThetatMin     1e-16;
+        gammaIntMax     1e+16;
+        gammaIntMin     1e-16;
+    }
+    discipline      aero;
+    multiPoint      0;
+    nMultiPoints    1;
+    adjPartDerivFDStep
+    {
+        State           1e-06;
+        FFD             0.001;
+        BC              0.01;
+        AOA             0.001;
+        ACTP            0.01;
+        ACTD            0.01;
+        ACTL            0.01;
+    }
+    transonicPCOption -1;
+    unsteadyAdjoint
+    {
+        mode            None;
+        nTimeInstances  -1;
+        periodicity     -1;
+    }
+    objFuncAvgStart 1;
+    adjPCLag        5;
+    useAD
+    {
+        mode            reverse;
+        dvName          None;
+        seedIndex       -9999;
+    }
+    rigidBodyMotion
+    {
+        mode            dummy;
+    }
+    hasIterativeBC  0;
+    runStatus       None;
+    printPYDAFOAMOptions 0;
+    printDAOptions  1;
+    debug           0;
+    writeJacobians  1 ( None );
+    printInterval   100;
+    printIntervalUnsteady 500;
+    primalMinResTolDiff 10000;
+    adjUseColoring  1;
+    adjEqnOption
+    {
+        globalPCIters   0;
+        asmOverlap      1;
+        localPCIters    1;
+        jacMatReOrdering rcm;
+        pcFillLevel     1;
+        gmresMaxIters   2000;
+        gmresRestart    2000;
+        gmresRelTol     1e-06;
+        gmresAbsTol     1e-14;
+        gmresTolDiff    100;
+        useNonZeroInitGuess 0;
+        useMGSO         0;
+        printInfo       1;
+        fpMaxIters      1000;
+        fpRelTol        1e-06;
+        fpMinResTolDiff 100;
+        fpPCUpwind      0;
+        dynAdjustTol    1;
+    }
+    normalizeResiduals 10 ( URes pRes p_rghRes nuTildaRes phiRes TRes DRes kRes omegaRes epsilonRes );
+    maxResConLv4JacPCMat
+    {
+        pRes            2;
+        phiRes          1;
+        URes            2;
+        TRes            2;
+        nuTildaRes      2;
+        kRes            2;
+        epsilonRes      2;
+        omegaRes        2;
+        p_rghRes        2;
+        DRes            2;
+    }
+    jacLowerBounds
+    {
+        dRdW            1e-30;
+        dRdWPC          1e-30;
+    }
+    maxTractionBCIters 100;
+    decomposeParDict
+    {
+        method          scotch;
+        simpleCoeffs
+        {
+            n               3 ( 2 2 1 );
+            delta           0.001;
+        }
+        preservePatches 1 ( None );
+        singleProcessorFaceSets 1 ( None );
+    }
+    adjStateOrdering state;
+    meshSurfaceFamily None;
+    checkMeshThreshold
+    {
+        maxAspectRatio  1000;
+        maxNonOrth      70;
+        maxSkewness     4;
+        maxIncorrectlyOrientedFaces 0;
+    }
+    writeSensMap    1 ( NONE );
+    writeDeformedFFDs 0;
+    maxCorrectBCCalls 10;
+    writeMinorIterations 0;
+    runLowOrderPrimal4PC
+    {
+        active          0;
+    }
+    wingProp
+    {
+        test_propeller_default
+        {
+            active          0;
+            nForceSections  10;
+            axis            3 ( 1 0 0 );
+            rotationCenter  3 { 0 };
+            actEps          0.02;
+            rotDir          right;
+            interpScheme    Poly4Gauss;
+            bladeName       blade;
+        }
+    }
+    primalMinIters  -1;
+    tensorflow
+    {
+        active          0;
+        modelName       model;
+        nInputs         1;
+        nOutputs        1;
+        batchSize       1000;
+    }
+}
+
+Reading OpenFOAM mesh information...
+I/O    : uncollated
+Case   : /home/dafoamuser/mount
+nProcs : 4
+Hosts  :
+(
+    (58346f0f493c 4)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+Reading the OpenFOAM mesh..
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+Finalising parallel run
+Checking if we need to compress the mesh files
+Checking if we need to compress the mesh files
+I/O    : uncollated
+[2]PETSC ERROR: ------------------------------------------------------------------------
+[2]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[2]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[2]PETSC ERROR: or see https://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind
+[2]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[2]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[2]PETSC ERROR: to get more information on the crash.
+[2]PETSC ERROR: Run with -malloc_debug to check if memory corruption is causing the crash.
+[3]PETSC ERROR: ------------------------------------------------------------------------
+[3]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[3]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[3]PETSC ERROR: or see https://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind
+[3]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[3]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[3]PETSC ERROR: to get more information on the crash.
+[3]PETSC ERROR: Run with -malloc_debug to check if memory corruption is causing the crash.
+[1]PETSC ERROR: ------------------------------------------------------------------------
+[1]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[1]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[1]PETSC ERROR: or see https://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind
+[1]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[1]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[1]PETSC ERROR: to get more information on the crash.
+[1]PETSC ERROR: Run with -malloc_debug to check if memory corruption is causing the crash.
+[0]PETSC ERROR: ------------------------------------------------------------------------
+[0]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
+[0]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
+[0]PETSC ERROR: or see https://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind
+[0]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
+[0]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
+[0]PETSC ERROR: to get more information on the crash.
+[0]PETSC ERROR: Run with -malloc_debug to check if memory corruption is causing the crash.
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 3 in communicator MPI_COMM_WORLD
+with errorcode 50176059.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[58346f0f493c:01898] 3 more processes have sent help message help-mpi-api.txt / mpi-abort
+[58346f0f493c:01898] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
