@@ -1,10 +1,10 @@
-2023-12-07 07:34:09.844386: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+2023-12-09 01:55:46.041648: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
 To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2023-12-07 07:34:09.850128: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+2023-12-09 01:55:46.041647: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
 To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2023-12-07 07:34:09.859116: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+2023-12-09 01:55:46.041647: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
 To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2023-12-07 07:34:09.876125: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+2023-12-09 01:55:46.041776: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
 To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
  
 -------------------------------------------------------------------------------
@@ -21,10 +21,10 @@ To enable the following instructions: AVX2 FMA, in other operations, rebuild Ten
 Build  : v1812 OPENFOAM=1812
 Arch   : "LSB;label=32;scalar=64"
 Exec   : decomposePar
-Date   : Dec 07 2023
-Time   : 07:34:12
-Host   : 58346f0f493c
-PID    : 2007
+Date   : Dec 09 2023
+Time   : 01:55:48
+Host   : af16470b1745
+PID    : 552
 I/O    : uncollated
 Case   : /home/dafoamuser/mount
 nProcs : 1
@@ -47,7 +47,7 @@ Create mesh
 Calculating distribution of cells
 Selecting decompositionMethod scotch [4]
 
-Finished decomposition in 0.01 s
+Finished decomposition in 0.04 s
 
 Calculating original mesh data
 
@@ -63,52 +63,48 @@ Overriding DebugSwitches according to controlDict
 
 
 Processor 0
-    Number of cells = 288
-    Number of faces shared with processor 1 = 26
-    Number of faces shared with processor 3 = 11
-    Number of processor patches = 2
-    Number of processor faces = 37
-    Number of boundary faces = 613
+    Number of cells = 3048
+    Number of faces shared with processor 1 = 57
+    Number of processor patches = 1
+    Number of processor faces = 57
+    Number of boundary faces = 6277
 Overriding DebugSwitches according to controlDict
     SolverPerformance 0;
 
 
 Processor 1
-    Number of cells = 288
-    Number of faces shared with processor 0 = 26
-    Number of faces shared with processor 2 = 12
-    Number of faces shared with processor 3 = 1
-    Number of processor patches = 3
-    Number of processor faces = 39
-    Number of boundary faces = 611
+    Number of cells = 3064
+    Number of faces shared with processor 0 = 57
+    Number of faces shared with processor 3 = 59
+    Number of processor patches = 2
+    Number of processor faces = 116
+    Number of boundary faces = 6234
 Overriding DebugSwitches according to controlDict
     SolverPerformance 0;
 
 
 Processor 2
-    Number of cells = 288
-    Number of faces shared with processor 1 = 12
-    Number of faces shared with processor 3 = 24
-    Number of processor patches = 2
-    Number of processor faces = 36
-    Number of boundary faces = 612
+    Number of cells = 3078
+    Number of faces shared with processor 3 = 57
+    Number of processor patches = 1
+    Number of processor faces = 57
+    Number of boundary faces = 6321
 Overriding DebugSwitches according to controlDict
     SolverPerformance 0;
 
 
 Processor 3
-    Number of cells = 288
-    Number of faces shared with processor 0 = 11
-    Number of faces shared with processor 1 = 1
-    Number of faces shared with processor 2 = 24
-    Number of processor patches = 3
-    Number of processor faces = 36
-    Number of boundary faces = 612
+    Number of cells = 3035
+    Number of faces shared with processor 1 = 59
+    Number of faces shared with processor 2 = 57
+    Number of processor patches = 2
+    Number of processor faces = 116
+    Number of boundary faces = 6178
 
-Number of processor faces = 74
-Max number of cells = 288 (0% above average 288)
-Max number of processor patches = 3 (20% above average 2.5)
-Max number of faces between processors = 39 (5.405405405405405% above average 37)
+Number of processor faces = 173
+Max number of cells = 3078 (0.7116564417177914% above average 3056.25)
+Max number of processor patches = 2 (33.33333333333334% above average 1.5)
+Max number of faces between processors = 116 (34.10404624277457% above average 86.5)
 
 Time = 0
 
@@ -136,7 +132,7 @@ Case   : /home/dafoamuser/mount
 nProcs : 4
 Hosts  :
 (
-    (58346f0f493c 4)
+    (af16470b1745 4)
 )
 Pstream initialized with:
     floatTransfer      : 0
@@ -156,7 +152,7 @@ Case   : /home/dafoamuser/mount
 nProcs : 4
 Hosts  :
 (
-    (58346f0f493c 4)
+    (af16470b1745 4)
 )
 Pstream initialized with:
     floatTransfer      : 0
@@ -197,11 +193,11 @@ nuTilda modelState
 phi surfaceScalarState
 p volScalarState
 )
-Global Cells: 1152
-Global Faces: 4754
-Global Xv: 7812
-Undecomposed points: 2450
-Global Adjoint States: 10514
+Global Cells: 12225
+Global Faces: 49353
+Global Xv: 76092
+Undecomposed points: 25012
+Global Adjoint States: 110478
 
 SIMPLE: no convergence criteria found. Calculations will run for 3000 steps.
 
@@ -211,7 +207,7 @@ maxSkewness: 4
 maxAspectRatio: 1000
 maxIncorrectlyOrientedFaces: 0
     Adding all faces of patches 1(inlet) ...
-    Found matching patch inlet with 0 faces.
+    Found matching patch inlet with 30 faces.
     Adding all faces of patches 1(outlet) ...
     Found matching patch outlet with 0 faces.
 Initializing fields for DASimpleFoam
@@ -240,11 +236,11 @@ nuTilda modelState
 phi surfaceScalarState
 p volScalarState
 )
-Global Cells: 1152
-Global Faces: 4754
-Global Xv: 7812
-Undecomposed points: 2450
-Global Adjoint States: 10514
+Global Cells: 12225
+Global Faces: 49353
+Global Xv: 76092
+Undecomposed points: 25012
+Global Adjoint States: 110478
 
 SIMPLE: no convergence criteria found. Calculations will run for 3000 steps.
 
@@ -254,7 +250,7 @@ maxSkewness: 4
 maxAspectRatio: 1000
 maxIncorrectlyOrientedFaces: 0
     Adding all faces of patches 1(inlet) ...
-    Found matching patch inlet with 0 faces.
+    Found matching patch inlet with 30 faces.
     Adding all faces of patches 1(outlet) ...
     Found matching patch outlet with 0 faces.
 DAFoam option dictionary: 
@@ -534,7 +530,7 @@ Case   : /home/dafoamuser/mount
 nProcs : 4
 Hosts  :
 (
-    (58346f0f493c 4)
+    (af16470b1745 4)
 )
 Pstream initialized with:
     floatTransfer      : 0
@@ -549,45 +545,1576 @@ Finalising parallel run
 Checking if we need to compress the mesh files
 Checking if we need to compress the mesh files
 I/O    : uncollated
-[2]PETSC ERROR: ------------------------------------------------------------------------
-[2]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
-[2]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
-[2]PETSC ERROR: or see https://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind
-[2]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
-[2]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
-[2]PETSC ERROR: to get more information on the crash.
-[2]PETSC ERROR: Run with -malloc_debug to check if memory corruption is causing the crash.
-[3]PETSC ERROR: ------------------------------------------------------------------------
-[3]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
-[3]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
-[3]PETSC ERROR: or see https://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind
-[3]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
-[3]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
-[3]PETSC ERROR: to get more information on the crash.
-[3]PETSC ERROR: Run with -malloc_debug to check if memory corruption is causing the crash.
-[1]PETSC ERROR: ------------------------------------------------------------------------
-[1]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
-[1]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
-[1]PETSC ERROR: or see https://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind
-[1]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
-[1]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
-[1]PETSC ERROR: to get more information on the crash.
-[1]PETSC ERROR: Run with -malloc_debug to check if memory corruption is causing the crash.
-[0]PETSC ERROR: ------------------------------------------------------------------------
-[0]PETSC ERROR: Caught signal number 11 SEGV: Segmentation Violation, probably memory access out of range
-[0]PETSC ERROR: Try option -start_in_debugger or -on_error_attach_debugger
-[0]PETSC ERROR: or see https://www.mcs.anl.gov/petsc/documentation/faq.html#valgrind
-[0]PETSC ERROR: or try http://valgrind.org on GNU/linux and Apple Mac OS X to find memory corruption errors
-[0]PETSC ERROR: configure using --with-debugging=yes, recompile, link, and run 
-[0]PETSC ERROR: to get more information on the crash.
-[0]PETSC ERROR: Run with -malloc_debug to check if memory corruption is causing the crash.
---------------------------------------------------------------------------
-MPI_ABORT was invoked on rank 3 in communicator MPI_COMM_WORLD
-with errorcode 50176059.
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+pyDAFoam initialization done!
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
++----------------------------------------+
+|          All IDWarp Options:           |
++----------------------------------------+
+{'LdefFact': 1.0,
+ 'aExp': 3.0,
+ 'alpha': 0.25,
+ 'bExp': 5.0,
+ 'bucketSize': 8,
+ 'cornerAngle': 30.0,
+ 'errTol': 0.0005,
+ 'evalMode': 'fast',
+ 'fileType': 'OpenFOAM',
+ 'gridFile': '/home/dafoamuser/mount',
+ 'restartFile': None,
+ 'specifiedSurfaces': None,
+ 'symmTol': 1e-06,
+ 'symmetryPlanes': [[[0.0, 0.0, 0], [0.0, 0.0, -1.0]]],
+ 'symmetrySurfaces': None,
+ 'useRotations': True,
+ 'zeroCornerRotations': True}
+I/O    : uncollated
+Case   : /home/dafoamuser/mount
+nProcs : 4
+Hosts  :
+(
+    (af16470b1745 4)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+Reading the OpenFOAM mesh..
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
 
-NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
-You may or may not see output from other processes, depending on
-exactly when Open MPI kills them.
---------------------------------------------------------------------------
-[58346f0f493c:01898] 3 more processes have sent help message help-mpi-api.txt / mpi-abort
-[58346f0f493c:01898] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Finalising parallel run
+Checking if we need to compress the mesh files
+Checking if we need to compress the mesh files
+#------------------------------#
+ Total Volume Nodes :     25364 
+#------------------------------#
+I/O    : uncollated
+222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+OrderedDict([('frontAndBack', [0]), ('inlet', [1]), ('outlet', [2]), ('procBoundary0to1', [3]), ('symmetricBoundary', [4]), ('wallBoundary', [5]), ('allSurfaces', [0, 1, 2, 3, 4, 5]), ('allWalls', [4, 5]), ('designSurfaces', [5])])
+3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
++-------------------- Symmetry Planes -------------------+
+|           Point                        Normal          |
+| (  0.000   0.000   0.000)    (  0.000   0.000  -1.000) |
++--------------------------------------------------------+
+#--------------------------------#
+ Unique Surface Nodes :       950 
+#--------------------------------#
+ Computing Denomenator Estimate...
+ Load Balancing...
+ Finished Mesh Initialization.
+444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
+55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
+55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
+55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
+55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+
+
+Optimization Problem -- opt
+================================================================================
+    Objective Function: calcObjFuncValues
+
+
+   Objectives
+      Index  Name            Value
+          0  PL     0.000000E+00
+
+   Variables (c - continuous, i - integer, d - discrete)
+      Index  Name                 Type      Lower Bound            Value      Upper Bound     Status
+          0  alphaPorosity_0         c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+          1  alphaPorosity_1         c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+          2  alphaPorosity_2         c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+          3  alphaPorosity_3         c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+          4  alphaPorosity_4         c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+          5  alphaPorosity_5         c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+          6  alphaPorosity_6         c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+          7  alphaPorosity_7         c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+          8  alphaPorosity_8         c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+          9  alphaPorosity_9         c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         10  alphaPorosity_10        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         11  alphaPorosity_11        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         12  alphaPorosity_12        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         13  alphaPorosity_13        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         14  alphaPorosity_14        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         15  alphaPorosity_15        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         16  alphaPorosity_16        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         17  alphaPorosity_17        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         18  alphaPorosity_18        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         19  alphaPorosity_19        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         20  alphaPorosity_20        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         21  alphaPorosity_21        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         22  alphaPorosity_22        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         23  alphaPorosity_23        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         24  alphaPorosity_24        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         25  alphaPorosity_25        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         26  alphaPorosity_26        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         27  alphaPorosity_27        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         28  alphaPorosity_28        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         29  alphaPorosity_29        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         30  alphaPorosity_30        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         31  alphaPorosity_31        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         32  alphaPorosity_32        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         33  alphaPorosity_33        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         34  alphaPorosity_34        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         35  alphaPorosity_35        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         36  alphaPorosity_36        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         37  alphaPorosity_37        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         38  alphaPorosity_38        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         39  alphaPorosity_39        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         40  alphaPorosity_40        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         41  alphaPorosity_41        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         42  alphaPorosity_42        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         43  alphaPorosity_43        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         44  alphaPorosity_44        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         45  alphaPorosity_45        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         46  alphaPorosity_46        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         47  alphaPorosity_47        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         48  alphaPorosity_48        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         49  alphaPorosity_49        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         50  alphaPorosity_50        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         51  alphaPorosity_51        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         52  alphaPorosity_52        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         53  alphaPorosity_53        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         54  alphaPorosity_54        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         55  alphaPorosity_55        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         56  alphaPorosity_56        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         57  alphaPorosity_57        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         58  alphaPorosity_58        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         59  alphaPorosity_59        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         60  alphaPorosity_60        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         61  alphaPorosity_61        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         62  alphaPorosity_62        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         63  alphaPorosity_63        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         64  alphaPorosity_64        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         65  alphaPorosity_65        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         66  alphaPorosity_66        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         67  alphaPorosity_67        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         68  alphaPorosity_68        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         69  alphaPorosity_69        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         70  alphaPorosity_70        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         71  alphaPorosity_71        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         72  alphaPorosity_72        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         73  alphaPorosity_73        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         74  alphaPorosity_74        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         75  alphaPorosity_75        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         76  alphaPorosity_76        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         77  alphaPorosity_77        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         78  alphaPorosity_78        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         79  alphaPorosity_79        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         80  alphaPorosity_80        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         81  alphaPorosity_81        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         82  alphaPorosity_82        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         83  alphaPorosity_83        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         84  alphaPorosity_84        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         85  alphaPorosity_85        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         86  alphaPorosity_86        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         87  alphaPorosity_87        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         88  alphaPorosity_88        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         89  alphaPorosity_89        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         90  alphaPorosity_90        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         91  alphaPorosity_91        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         92  alphaPorosity_92        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         93  alphaPorosity_93        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         94  alphaPorosity_94        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         95  alphaPorosity_95        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         96  alphaPorosity_96        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         97  alphaPorosity_97        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         98  alphaPorosity_98        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+         99  alphaPorosity_99        c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        100  alphaPorosity_100       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        101  alphaPorosity_101       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        102  alphaPorosity_102       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        103  alphaPorosity_103       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        104  alphaPorosity_104       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        105  alphaPorosity_105       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        106  alphaPorosity_106       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        107  alphaPorosity_107       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        108  alphaPorosity_108       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        109  alphaPorosity_109       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        110  alphaPorosity_110       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        111  alphaPorosity_111       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        112  alphaPorosity_112       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        113  alphaPorosity_113       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        114  alphaPorosity_114       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        115  alphaPorosity_115       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        116  alphaPorosity_116       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        117  alphaPorosity_117       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        118  alphaPorosity_118       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        119  alphaPorosity_119       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        120  alphaPorosity_120       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        121  alphaPorosity_121       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        122  alphaPorosity_122       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        123  alphaPorosity_123       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        124  alphaPorosity_124       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        125  alphaPorosity_125       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        126  alphaPorosity_126       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        127  alphaPorosity_127       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        128  alphaPorosity_128       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        129  alphaPorosity_129       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        130  alphaPorosity_130       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        131  alphaPorosity_131       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        132  alphaPorosity_132       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        133  alphaPorosity_133       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        134  alphaPorosity_134       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        135  alphaPorosity_135       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        136  alphaPorosity_136       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        137  alphaPorosity_137       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        138  alphaPorosity_138       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        139  alphaPorosity_139       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        140  alphaPorosity_140       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        141  alphaPorosity_141       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        142  alphaPorosity_142       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        143  alphaPorosity_143       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        144  alphaPorosity_144       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        145  alphaPorosity_145       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        146  alphaPorosity_146       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        147  alphaPorosity_147       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        148  alphaPorosity_148       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        149  alphaPorosity_149       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        150  alphaPorosity_150       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        151  alphaPorosity_151       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        152  alphaPorosity_152       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        153  alphaPorosity_153       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        154  alphaPorosity_154       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        155  alphaPorosity_155       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        156  alphaPorosity_156       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        157  alphaPorosity_157       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        158  alphaPorosity_158       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        159  alphaPorosity_159       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        160  alphaPorosity_160       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        161  alphaPorosity_161       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        162  alphaPorosity_162       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        163  alphaPorosity_163       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        164  alphaPorosity_164       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        165  alphaPorosity_165       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        166  alphaPorosity_166       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        167  alphaPorosity_167       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        168  alphaPorosity_168       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        169  alphaPorosity_169       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        170  alphaPorosity_170       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        171  alphaPorosity_171       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        172  alphaPorosity_172       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        173  alphaPorosity_173       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        174  alphaPorosity_174       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        175  alphaPorosity_175       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        176  alphaPorosity_176       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        177  alphaPorosity_177       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        178  alphaPorosity_178       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        179  alphaPorosity_179       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        180  alphaPorosity_180       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        181  alphaPorosity_181       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        182  alphaPorosity_182       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        183  alphaPorosity_183       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        184  alphaPorosity_184       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        185  alphaPorosity_185       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        186  alphaPorosity_186       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        187  alphaPorosity_187       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        188  alphaPorosity_188       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        189  alphaPorosity_189       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        190  alphaPorosity_190       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        191  alphaPorosity_191       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        192  alphaPorosity_192       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        193  alphaPorosity_193       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        194  alphaPorosity_194       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        195  alphaPorosity_195       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        196  alphaPorosity_196       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        197  alphaPorosity_197       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        198  alphaPorosity_198       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        199  alphaPorosity_199       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        200  alphaPorosity_200       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        201  alphaPorosity_201       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        202  alphaPorosity_202       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        203  alphaPorosity_203       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        204  alphaPorosity_204       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        205  alphaPorosity_205       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        206  alphaPorosity_206       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        207  alphaPorosity_207       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        208  alphaPorosity_208       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        209  alphaPorosity_209       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        210  alphaPorosity_210       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        211  alphaPorosity_211       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        212  alphaPorosity_212       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        213  alphaPorosity_213       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        214  alphaPorosity_214       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        215  alphaPorosity_215       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        216  alphaPorosity_216       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        217  alphaPorosity_217       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        218  alphaPorosity_218       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        219  alphaPorosity_219       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        220  alphaPorosity_220       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        221  alphaPorosity_221       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        222  alphaPorosity_222       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        223  alphaPorosity_223       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        224  alphaPorosity_224       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        225  alphaPorosity_225       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        226  alphaPorosity_226       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        227  alphaPorosity_227       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        228  alphaPorosity_228       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        229  alphaPorosity_229       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        230  alphaPorosity_230       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        231  alphaPorosity_231       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        232  alphaPorosity_232       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        233  alphaPorosity_233       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        234  alphaPorosity_234       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        235  alphaPorosity_235       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        236  alphaPorosity_236       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        237  alphaPorosity_237       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        238  alphaPorosity_238       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        239  alphaPorosity_239       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        240  alphaPorosity_240       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        241  alphaPorosity_241       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        242  alphaPorosity_242       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        243  alphaPorosity_243       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        244  alphaPorosity_244       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        245  alphaPorosity_245       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        246  alphaPorosity_246       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        247  alphaPorosity_247       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        248  alphaPorosity_248       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        249  alphaPorosity_249       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        250  alphaPorosity_250       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        251  alphaPorosity_251       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        252  alphaPorosity_252       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        253  alphaPorosity_253       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        254  alphaPorosity_254       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        255  alphaPorosity_255       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        256  alphaPorosity_256       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        257  alphaPorosity_257       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        258  alphaPorosity_258       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        259  alphaPorosity_259       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        260  alphaPorosity_260       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        261  alphaPorosity_261       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        262  alphaPorosity_262       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        263  alphaPorosity_263       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        264  alphaPorosity_264       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        265  alphaPorosity_265       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        266  alphaPorosity_266       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        267  alphaPorosity_267       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        268  alphaPorosity_268       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        269  alphaPorosity_269       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        270  alphaPorosity_270       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        271  alphaPorosity_271       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        272  alphaPorosity_272       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        273  alphaPorosity_273       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        274  alphaPorosity_274       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        275  alphaPorosity_275       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        276  alphaPorosity_276       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        277  alphaPorosity_277       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        278  alphaPorosity_278       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        279  alphaPorosity_279       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        280  alphaPorosity_280       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        281  alphaPorosity_281       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        282  alphaPorosity_282       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        283  alphaPorosity_283       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        284  alphaPorosity_284       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        285  alphaPorosity_285       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        286  alphaPorosity_286       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        287  alphaPorosity_287       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        288  alphaPorosity_288       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        289  alphaPorosity_289       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        290  alphaPorosity_290       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        291  alphaPorosity_291       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        292  alphaPorosity_292       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        293  alphaPorosity_293       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        294  alphaPorosity_294       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        295  alphaPorosity_295       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        296  alphaPorosity_296       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        297  alphaPorosity_297       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        298  alphaPorosity_298       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        299  alphaPorosity_299       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        300  alphaPorosity_300       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        301  alphaPorosity_301       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        302  alphaPorosity_302       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        303  alphaPorosity_303       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        304  alphaPorosity_304       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        305  alphaPorosity_305       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        306  alphaPorosity_306       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        307  alphaPorosity_307       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        308  alphaPorosity_308       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        309  alphaPorosity_309       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        310  alphaPorosity_310       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        311  alphaPorosity_311       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        312  alphaPorosity_312       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        313  alphaPorosity_313       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        314  alphaPorosity_314       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        315  alphaPorosity_315       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        316  alphaPorosity_316       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        317  alphaPorosity_317       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        318  alphaPorosity_318       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        319  alphaPorosity_319       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        320  alphaPorosity_320       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        321  alphaPorosity_321       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        322  alphaPorosity_322       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        323  alphaPorosity_323       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        324  alphaPorosity_324       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        325  alphaPorosity_325       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        326  alphaPorosity_326       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        327  alphaPorosity_327       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        328  alphaPorosity_328       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        329  alphaPorosity_329       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        330  alphaPorosity_330       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        331  alphaPorosity_331       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        332  alphaPorosity_332       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        333  alphaPorosity_333       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        334  alphaPorosity_334       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        335  alphaPorosity_335       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        336  alphaPorosity_336       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        337  alphaPorosity_337       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        338  alphaPorosity_338       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        339  alphaPorosity_339       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        340  alphaPorosity_340       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        341  alphaPorosity_341       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        342  alphaPorosity_342       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        343  alphaPorosity_343       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        344  alphaPorosity_344       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        345  alphaPorosity_345       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        346  alphaPorosity_346       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        347  alphaPorosity_347       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        348  alphaPorosity_348       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        349  alphaPorosity_349       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        350  alphaPorosity_350       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        351  alphaPorosity_351       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        352  alphaPorosity_352       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        353  alphaPorosity_353       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        354  alphaPorosity_354       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        355  alphaPorosity_355       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        356  alphaPorosity_356       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        357  alphaPorosity_357       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        358  alphaPorosity_358       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        359  alphaPorosity_359       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        360  alphaPorosity_360       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        361  alphaPorosity_361       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        362  alphaPorosity_362       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        363  alphaPorosity_363       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        364  alphaPorosity_364       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        365  alphaPorosity_365       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        366  alphaPorosity_366       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        367  alphaPorosity_367       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        368  alphaPorosity_368       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        369  alphaPorosity_369       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        370  alphaPorosity_370       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        371  alphaPorosity_371       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        372  alphaPorosity_372       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        373  alphaPorosity_373       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        374  alphaPorosity_374       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        375  alphaPorosity_375       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        376  alphaPorosity_376       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        377  alphaPorosity_377       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        378  alphaPorosity_378       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        379  alphaPorosity_379       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        380  alphaPorosity_380       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        381  alphaPorosity_381       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        382  alphaPorosity_382       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        383  alphaPorosity_383       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        384  alphaPorosity_384       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        385  alphaPorosity_385       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        386  alphaPorosity_386       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        387  alphaPorosity_387       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        388  alphaPorosity_388       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        389  alphaPorosity_389       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        390  alphaPorosity_390       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        391  alphaPorosity_391       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        392  alphaPorosity_392       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        393  alphaPorosity_393       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        394  alphaPorosity_394       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        395  alphaPorosity_395       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        396  alphaPorosity_396       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        397  alphaPorosity_397       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        398  alphaPorosity_398       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        399  alphaPorosity_399       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        400  alphaPorosity_400       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        401  alphaPorosity_401       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        402  alphaPorosity_402       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        403  alphaPorosity_403       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        404  alphaPorosity_404       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        405  alphaPorosity_405       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        406  alphaPorosity_406       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        407  alphaPorosity_407       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        408  alphaPorosity_408       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        409  alphaPorosity_409       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        410  alphaPorosity_410       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        411  alphaPorosity_411       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        412  alphaPorosity_412       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        413  alphaPorosity_413       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        414  alphaPorosity_414       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        415  alphaPorosity_415       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        416  alphaPorosity_416       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        417  alphaPorosity_417       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        418  alphaPorosity_418       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        419  alphaPorosity_419       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        420  alphaPorosity_420       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        421  alphaPorosity_421       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        422  alphaPorosity_422       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        423  alphaPorosity_423       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        424  alphaPorosity_424       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        425  alphaPorosity_425       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        426  alphaPorosity_426       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        427  alphaPorosity_427       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        428  alphaPorosity_428       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        429  alphaPorosity_429       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        430  alphaPorosity_430       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        431  alphaPorosity_431       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        432  alphaPorosity_432       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        433  alphaPorosity_433       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        434  alphaPorosity_434       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        435  alphaPorosity_435       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        436  alphaPorosity_436       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        437  alphaPorosity_437       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        438  alphaPorosity_438       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        439  alphaPorosity_439       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        440  alphaPorosity_440       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        441  alphaPorosity_441       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        442  alphaPorosity_442       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        443  alphaPorosity_443       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        444  alphaPorosity_444       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        445  alphaPorosity_445       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        446  alphaPorosity_446       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        447  alphaPorosity_447       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        448  alphaPorosity_448       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        449  alphaPorosity_449       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        450  alphaPorosity_450       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        451  alphaPorosity_451       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        452  alphaPorosity_452       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        453  alphaPorosity_453       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        454  alphaPorosity_454       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        455  alphaPorosity_455       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        456  alphaPorosity_456       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        457  alphaPorosity_457       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        458  alphaPorosity_458       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        459  alphaPorosity_459       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        460  alphaPorosity_460       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        461  alphaPorosity_461       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        462  alphaPorosity_462       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        463  alphaPorosity_463       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        464  alphaPorosity_464       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        465  alphaPorosity_465       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        466  alphaPorosity_466       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        467  alphaPorosity_467       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        468  alphaPorosity_468       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        469  alphaPorosity_469       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        470  alphaPorosity_470       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        471  alphaPorosity_471       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        472  alphaPorosity_472       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        473  alphaPorosity_473       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        474  alphaPorosity_474       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        475  alphaPorosity_475       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        476  alphaPorosity_476       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        477  alphaPorosity_477       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        478  alphaPorosity_478       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        479  alphaPorosity_479       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        480  alphaPorosity_480       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        481  alphaPorosity_481       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        482  alphaPorosity_482       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        483  alphaPorosity_483       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        484  alphaPorosity_484       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        485  alphaPorosity_485       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        486  alphaPorosity_486       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        487  alphaPorosity_487       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        488  alphaPorosity_488       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        489  alphaPorosity_489       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        490  alphaPorosity_490       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        491  alphaPorosity_491       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        492  alphaPorosity_492       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        493  alphaPorosity_493       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        494  alphaPorosity_494       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        495  alphaPorosity_495       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        496  alphaPorosity_496       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        497  alphaPorosity_497       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        498  alphaPorosity_498       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        499  alphaPorosity_499       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        500  alphaPorosity_500       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        501  alphaPorosity_501       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        502  alphaPorosity_502       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        503  alphaPorosity_503       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        504  alphaPorosity_504       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        505  alphaPorosity_505       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        506  alphaPorosity_506       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        507  alphaPorosity_507       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        508  alphaPorosity_508       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        509  alphaPorosity_509       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        510  alphaPorosity_510       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        511  alphaPorosity_511       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        512  alphaPorosity_512       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        513  alphaPorosity_513       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        514  alphaPorosity_514       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        515  alphaPorosity_515       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        516  alphaPorosity_516       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        517  alphaPorosity_517       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        518  alphaPorosity_518       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        519  alphaPorosity_519       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        520  alphaPorosity_520       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        521  alphaPorosity_521       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        522  alphaPorosity_522       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        523  alphaPorosity_523       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        524  alphaPorosity_524       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        525  alphaPorosity_525       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        526  alphaPorosity_526       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        527  alphaPorosity_527       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        528  alphaPorosity_528       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        529  alphaPorosity_529       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        530  alphaPorosity_530       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        531  alphaPorosity_531       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        532  alphaPorosity_532       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        533  alphaPorosity_533       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        534  alphaPorosity_534       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        535  alphaPorosity_535       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        536  alphaPorosity_536       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        537  alphaPorosity_537       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        538  alphaPorosity_538       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        539  alphaPorosity_539       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        540  alphaPorosity_540       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        541  alphaPorosity_541       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        542  alphaPorosity_542       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        543  alphaPorosity_543       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        544  alphaPorosity_544       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        545  alphaPorosity_545       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        546  alphaPorosity_546       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        547  alphaPorosity_547       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        548  alphaPorosity_548       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        549  alphaPorosity_549       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        550  alphaPorosity_550       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        551  alphaPorosity_551       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        552  alphaPorosity_552       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        553  alphaPorosity_553       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        554  alphaPorosity_554       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        555  alphaPorosity_555       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        556  alphaPorosity_556       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        557  alphaPorosity_557       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        558  alphaPorosity_558       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        559  alphaPorosity_559       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        560  alphaPorosity_560       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        561  alphaPorosity_561       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        562  alphaPorosity_562       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        563  alphaPorosity_563       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        564  alphaPorosity_564       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        565  alphaPorosity_565       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        566  alphaPorosity_566       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        567  alphaPorosity_567       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        568  alphaPorosity_568       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        569  alphaPorosity_569       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        570  alphaPorosity_570       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        571  alphaPorosity_571       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        572  alphaPorosity_572       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        573  alphaPorosity_573       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        574  alphaPorosity_574       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        575  alphaPorosity_575       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        576  alphaPorosity_576       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        577  alphaPorosity_577       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        578  alphaPorosity_578       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        579  alphaPorosity_579       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        580  alphaPorosity_580       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        581  alphaPorosity_581       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        582  alphaPorosity_582       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        583  alphaPorosity_583       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        584  alphaPorosity_584       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        585  alphaPorosity_585       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        586  alphaPorosity_586       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        587  alphaPorosity_587       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        588  alphaPorosity_588       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        589  alphaPorosity_589       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        590  alphaPorosity_590       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        591  alphaPorosity_591       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        592  alphaPorosity_592       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        593  alphaPorosity_593       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        594  alphaPorosity_594       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        595  alphaPorosity_595       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        596  alphaPorosity_596       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        597  alphaPorosity_597       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        598  alphaPorosity_598       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        599  alphaPorosity_599       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        600  alphaPorosity_600       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        601  alphaPorosity_601       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        602  alphaPorosity_602       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        603  alphaPorosity_603       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        604  alphaPorosity_604       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        605  alphaPorosity_605       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        606  alphaPorosity_606       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        607  alphaPorosity_607       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        608  alphaPorosity_608       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        609  alphaPorosity_609       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        610  alphaPorosity_610       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        611  alphaPorosity_611       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        612  alphaPorosity_612       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        613  alphaPorosity_613       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        614  alphaPorosity_614       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        615  alphaPorosity_615       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        616  alphaPorosity_616       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        617  alphaPorosity_617       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        618  alphaPorosity_618       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        619  alphaPorosity_619       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        620  alphaPorosity_620       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        621  alphaPorosity_621       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        622  alphaPorosity_622       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        623  alphaPorosity_623       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        624  alphaPorosity_624       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        625  alphaPorosity_625       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        626  alphaPorosity_626       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        627  alphaPorosity_627       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        628  alphaPorosity_628       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        629  alphaPorosity_629       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        630  alphaPorosity_630       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        631  alphaPorosity_631       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        632  alphaPorosity_632       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        633  alphaPorosity_633       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        634  alphaPorosity_634       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        635  alphaPorosity_635       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        636  alphaPorosity_636       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        637  alphaPorosity_637       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        638  alphaPorosity_638       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        639  alphaPorosity_639       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        640  alphaPorosity_640       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        641  alphaPorosity_641       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        642  alphaPorosity_642       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        643  alphaPorosity_643       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        644  alphaPorosity_644       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        645  alphaPorosity_645       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        646  alphaPorosity_646       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        647  alphaPorosity_647       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        648  alphaPorosity_648       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        649  alphaPorosity_649       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        650  alphaPorosity_650       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        651  alphaPorosity_651       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        652  alphaPorosity_652       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        653  alphaPorosity_653       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        654  alphaPorosity_654       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        655  alphaPorosity_655       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        656  alphaPorosity_656       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        657  alphaPorosity_657       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        658  alphaPorosity_658       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        659  alphaPorosity_659       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        660  alphaPorosity_660       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        661  alphaPorosity_661       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        662  alphaPorosity_662       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        663  alphaPorosity_663       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        664  alphaPorosity_664       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        665  alphaPorosity_665       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        666  alphaPorosity_666       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        667  alphaPorosity_667       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        668  alphaPorosity_668       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        669  alphaPorosity_669       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        670  alphaPorosity_670       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        671  alphaPorosity_671       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        672  alphaPorosity_672       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        673  alphaPorosity_673       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        674  alphaPorosity_674       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        675  alphaPorosity_675       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        676  alphaPorosity_676       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        677  alphaPorosity_677       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        678  alphaPorosity_678       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        679  alphaPorosity_679       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        680  alphaPorosity_680       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        681  alphaPorosity_681       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        682  alphaPorosity_682       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        683  alphaPorosity_683       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        684  alphaPorosity_684       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        685  alphaPorosity_685       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        686  alphaPorosity_686       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        687  alphaPorosity_687       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        688  alphaPorosity_688       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        689  alphaPorosity_689       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        690  alphaPorosity_690       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        691  alphaPorosity_691       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        692  alphaPorosity_692       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        693  alphaPorosity_693       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        694  alphaPorosity_694       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        695  alphaPorosity_695       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        696  alphaPorosity_696       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        697  alphaPorosity_697       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        698  alphaPorosity_698       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        699  alphaPorosity_699       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        700  alphaPorosity_700       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        701  alphaPorosity_701       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        702  alphaPorosity_702       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        703  alphaPorosity_703       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        704  alphaPorosity_704       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        705  alphaPorosity_705       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        706  alphaPorosity_706       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        707  alphaPorosity_707       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        708  alphaPorosity_708       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        709  alphaPorosity_709       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        710  alphaPorosity_710       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        711  alphaPorosity_711       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        712  alphaPorosity_712       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        713  alphaPorosity_713       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        714  alphaPorosity_714       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        715  alphaPorosity_715       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        716  alphaPorosity_716       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        717  alphaPorosity_717       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        718  alphaPorosity_718       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        719  alphaPorosity_719       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        720  alphaPorosity_720       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        721  alphaPorosity_721       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        722  alphaPorosity_722       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        723  alphaPorosity_723       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        724  alphaPorosity_724       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        725  alphaPorosity_725       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        726  alphaPorosity_726       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        727  alphaPorosity_727       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        728  alphaPorosity_728       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        729  alphaPorosity_729       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        730  alphaPorosity_730       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        731  alphaPorosity_731       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        732  alphaPorosity_732       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        733  alphaPorosity_733       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        734  alphaPorosity_734       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        735  alphaPorosity_735       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        736  alphaPorosity_736       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        737  alphaPorosity_737       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        738  alphaPorosity_738       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        739  alphaPorosity_739       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        740  alphaPorosity_740       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        741  alphaPorosity_741       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        742  alphaPorosity_742       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        743  alphaPorosity_743       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        744  alphaPorosity_744       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        745  alphaPorosity_745       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        746  alphaPorosity_746       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        747  alphaPorosity_747       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        748  alphaPorosity_748       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        749  alphaPorosity_749       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        750  alphaPorosity_750       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        751  alphaPorosity_751       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        752  alphaPorosity_752       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        753  alphaPorosity_753       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        754  alphaPorosity_754       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        755  alphaPorosity_755       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        756  alphaPorosity_756       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        757  alphaPorosity_757       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        758  alphaPorosity_758       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        759  alphaPorosity_759       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        760  alphaPorosity_760       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        761  alphaPorosity_761       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        762  alphaPorosity_762       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        763  alphaPorosity_763       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        764  alphaPorosity_764       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        765  alphaPorosity_765       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        766  alphaPorosity_766       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        767  alphaPorosity_767       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        768  alphaPorosity_768       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        769  alphaPorosity_769       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        770  alphaPorosity_770       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        771  alphaPorosity_771       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        772  alphaPorosity_772       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        773  alphaPorosity_773       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        774  alphaPorosity_774       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        775  alphaPorosity_775       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        776  alphaPorosity_776       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        777  alphaPorosity_777       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        778  alphaPorosity_778       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        779  alphaPorosity_779       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        780  alphaPorosity_780       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        781  alphaPorosity_781       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        782  alphaPorosity_782       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        783  alphaPorosity_783       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        784  alphaPorosity_784       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        785  alphaPorosity_785       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        786  alphaPorosity_786       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        787  alphaPorosity_787       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        788  alphaPorosity_788       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        789  alphaPorosity_789       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        790  alphaPorosity_790       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        791  alphaPorosity_791       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        792  alphaPorosity_792       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        793  alphaPorosity_793       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        794  alphaPorosity_794       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        795  alphaPorosity_795       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        796  alphaPorosity_796       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        797  alphaPorosity_797       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        798  alphaPorosity_798       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        799  alphaPorosity_799       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        800  alphaPorosity_800       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        801  alphaPorosity_801       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        802  alphaPorosity_802       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        803  alphaPorosity_803       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        804  alphaPorosity_804       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        805  alphaPorosity_805       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        806  alphaPorosity_806       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        807  alphaPorosity_807       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        808  alphaPorosity_808       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        809  alphaPorosity_809       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        810  alphaPorosity_810       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        811  alphaPorosity_811       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        812  alphaPorosity_812       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        813  alphaPorosity_813       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        814  alphaPorosity_814       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        815  alphaPorosity_815       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        816  alphaPorosity_816       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        817  alphaPorosity_817       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        818  alphaPorosity_818       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        819  alphaPorosity_819       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        820  alphaPorosity_820       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        821  alphaPorosity_821       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        822  alphaPorosity_822       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        823  alphaPorosity_823       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        824  alphaPorosity_824       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        825  alphaPorosity_825       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        826  alphaPorosity_826       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        827  alphaPorosity_827       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        828  alphaPorosity_828       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        829  alphaPorosity_829       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        830  alphaPorosity_830       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        831  alphaPorosity_831       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        832  alphaPorosity_832       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        833  alphaPorosity_833       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        834  alphaPorosity_834       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        835  alphaPorosity_835       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        836  alphaPorosity_836       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        837  alphaPorosity_837       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        838  alphaPorosity_838       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        839  alphaPorosity_839       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        840  alphaPorosity_840       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        841  alphaPorosity_841       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        842  alphaPorosity_842       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        843  alphaPorosity_843       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        844  alphaPorosity_844       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        845  alphaPorosity_845       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        846  alphaPorosity_846       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        847  alphaPorosity_847       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        848  alphaPorosity_848       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        849  alphaPorosity_849       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        850  alphaPorosity_850       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        851  alphaPorosity_851       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        852  alphaPorosity_852       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        853  alphaPorosity_853       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        854  alphaPorosity_854       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        855  alphaPorosity_855       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        856  alphaPorosity_856       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        857  alphaPorosity_857       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        858  alphaPorosity_858       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        859  alphaPorosity_859       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        860  alphaPorosity_860       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        861  alphaPorosity_861       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        862  alphaPorosity_862       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        863  alphaPorosity_863       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        864  alphaPorosity_864       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        865  alphaPorosity_865       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        866  alphaPorosity_866       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        867  alphaPorosity_867       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        868  alphaPorosity_868       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        869  alphaPorosity_869       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        870  alphaPorosity_870       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        871  alphaPorosity_871       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        872  alphaPorosity_872       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        873  alphaPorosity_873       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        874  alphaPorosity_874       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        875  alphaPorosity_875       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        876  alphaPorosity_876       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        877  alphaPorosity_877       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        878  alphaPorosity_878       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        879  alphaPorosity_879       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        880  alphaPorosity_880       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        881  alphaPorosity_881       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        882  alphaPorosity_882       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        883  alphaPorosity_883       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        884  alphaPorosity_884       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        885  alphaPorosity_885       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        886  alphaPorosity_886       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        887  alphaPorosity_887       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        888  alphaPorosity_888       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        889  alphaPorosity_889       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        890  alphaPorosity_890       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        891  alphaPorosity_891       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        892  alphaPorosity_892       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        893  alphaPorosity_893       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        894  alphaPorosity_894       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        895  alphaPorosity_895       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        896  alphaPorosity_896       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        897  alphaPorosity_897       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        898  alphaPorosity_898       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        899  alphaPorosity_899       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        900  alphaPorosity_900       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        901  alphaPorosity_901       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        902  alphaPorosity_902       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        903  alphaPorosity_903       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        904  alphaPorosity_904       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        905  alphaPorosity_905       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        906  alphaPorosity_906       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        907  alphaPorosity_907       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        908  alphaPorosity_908       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        909  alphaPorosity_909       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        910  alphaPorosity_910       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        911  alphaPorosity_911       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        912  alphaPorosity_912       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        913  alphaPorosity_913       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        914  alphaPorosity_914       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        915  alphaPorosity_915       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        916  alphaPorosity_916       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        917  alphaPorosity_917       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        918  alphaPorosity_918       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        919  alphaPorosity_919       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        920  alphaPorosity_920       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        921  alphaPorosity_921       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        922  alphaPorosity_922       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        923  alphaPorosity_923       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        924  alphaPorosity_924       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        925  alphaPorosity_925       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        926  alphaPorosity_926       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        927  alphaPorosity_927       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        928  alphaPorosity_928       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        929  alphaPorosity_929       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        930  alphaPorosity_930       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        931  alphaPorosity_931       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        932  alphaPorosity_932       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        933  alphaPorosity_933       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        934  alphaPorosity_934       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        935  alphaPorosity_935       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        936  alphaPorosity_936       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        937  alphaPorosity_937       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        938  alphaPorosity_938       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        939  alphaPorosity_939       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        940  alphaPorosity_940       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        941  alphaPorosity_941       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        942  alphaPorosity_942       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        943  alphaPorosity_943       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        944  alphaPorosity_944       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        945  alphaPorosity_945       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        946  alphaPorosity_946       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        947  alphaPorosity_947       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        948  alphaPorosity_948       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        949  alphaPorosity_949       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        950  alphaPorosity_950       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        951  alphaPorosity_951       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        952  alphaPorosity_952       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        953  alphaPorosity_953       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        954  alphaPorosity_954       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        955  alphaPorosity_955       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        956  alphaPorosity_956       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        957  alphaPorosity_957       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        958  alphaPorosity_958       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        959  alphaPorosity_959       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        960  alphaPorosity_960       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        961  alphaPorosity_961       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        962  alphaPorosity_962       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        963  alphaPorosity_963       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        964  alphaPorosity_964       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        965  alphaPorosity_965       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        966  alphaPorosity_966       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        967  alphaPorosity_967       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        968  alphaPorosity_968       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        969  alphaPorosity_969       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        970  alphaPorosity_970       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        971  alphaPorosity_971       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        972  alphaPorosity_972       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        973  alphaPorosity_973       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        974  alphaPorosity_974       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        975  alphaPorosity_975       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        976  alphaPorosity_976       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        977  alphaPorosity_977       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        978  alphaPorosity_978       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        979  alphaPorosity_979       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        980  alphaPorosity_980       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        981  alphaPorosity_981       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        982  alphaPorosity_982       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        983  alphaPorosity_983       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        984  alphaPorosity_984       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        985  alphaPorosity_985       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        986  alphaPorosity_986       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        987  alphaPorosity_987       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        988  alphaPorosity_988       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        989  alphaPorosity_989       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        990  alphaPorosity_990       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        991  alphaPorosity_991       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        992  alphaPorosity_992       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        993  alphaPorosity_993       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        994  alphaPorosity_994       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        995  alphaPorosity_995       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        996  alphaPorosity_996       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        997  alphaPorosity_997       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        998  alphaPorosity_998       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+        999  alphaPorosity_999       c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1000  alphaPorosity_1000      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1001  alphaPorosity_1001      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1002  alphaPorosity_1002      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1003  alphaPorosity_1003      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1004  alphaPorosity_1004      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1005  alphaPorosity_1005      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1006  alphaPorosity_1006      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1007  alphaPorosity_1007      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1008  alphaPorosity_1008      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1009  alphaPorosity_1009      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1010  alphaPorosity_1010      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1011  alphaPorosity_1011      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1012  alphaPorosity_1012      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1013  alphaPorosity_1013      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1014  alphaPorosity_1014      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1015  alphaPorosity_1015      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1016  alphaPorosity_1016      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1017  alphaPorosity_1017      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1018  alphaPorosity_1018      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1019  alphaPorosity_1019      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1020  alphaPorosity_1020      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1021  alphaPorosity_1021      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1022  alphaPorosity_1022      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1023  alphaPorosity_1023      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1024  alphaPorosity_1024      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1025  alphaPorosity_1025      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1026  alphaPorosity_1026      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1027  alphaPorosity_1027      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1028  alphaPorosity_1028      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1029  alphaPorosity_1029      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1030  alphaPorosity_1030      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1031  alphaPorosity_1031      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1032  alphaPorosity_1032      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1033  alphaPorosity_1033      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1034  alphaPorosity_1034      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1035  alphaPorosity_1035      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1036  alphaPorosity_1036      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1037  alphaPorosity_1037      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1038  alphaPorosity_1038      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1039  alphaPorosity_1039      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1040  alphaPorosity_1040      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1041  alphaPorosity_1041      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1042  alphaPorosity_1042      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1043  alphaPorosity_1043      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1044  alphaPorosity_1044      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1045  alphaPorosity_1045      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1046  alphaPorosity_1046      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1047  alphaPorosity_1047      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1048  alphaPorosity_1048      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1049  alphaPorosity_1049      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1050  alphaPorosity_1050      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1051  alphaPorosity_1051      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1052  alphaPorosity_1052      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1053  alphaPorosity_1053      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1054  alphaPorosity_1054      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1055  alphaPorosity_1055      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1056  alphaPorosity_1056      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1057  alphaPorosity_1057      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1058  alphaPorosity_1058      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1059  alphaPorosity_1059      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1060  alphaPorosity_1060      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1061  alphaPorosity_1061      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1062  alphaPorosity_1062      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1063  alphaPorosity_1063      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1064  alphaPorosity_1064      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1065  alphaPorosity_1065      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1066  alphaPorosity_1066      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1067  alphaPorosity_1067      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1068  alphaPorosity_1068      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1069  alphaPorosity_1069      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1070  alphaPorosity_1070      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1071  alphaPorosity_1071      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1072  alphaPorosity_1072      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1073  alphaPorosity_1073      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1074  alphaPorosity_1074      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1075  alphaPorosity_1075      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1076  alphaPorosity_1076      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1077  alphaPorosity_1077      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1078  alphaPorosity_1078      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1079  alphaPorosity_1079      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1080  alphaPorosity_1080      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1081  alphaPorosity_1081      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1082  alphaPorosity_1082      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1083  alphaPorosity_1083      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1084  alphaPorosity_1084      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1085  alphaPorosity_1085      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1086  alphaPorosity_1086      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1087  alphaPorosity_1087      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1088  alphaPorosity_1088      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1089  alphaPorosity_1089      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1090  alphaPorosity_1090      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1091  alphaPorosity_1091      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1092  alphaPorosity_1092      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1093  alphaPorosity_1093      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1094  alphaPorosity_1094      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1095  alphaPorosity_1095      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1096  alphaPorosity_1096      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1097  alphaPorosity_1097      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1098  alphaPorosity_1098      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1099  alphaPorosity_1099      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1100  alphaPorosity_1100      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1101  alphaPorosity_1101      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1102  alphaPorosity_1102      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1103  alphaPorosity_1103      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1104  alphaPorosity_1104      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1105  alphaPorosity_1105      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1106  alphaPorosity_1106      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1107  alphaPorosity_1107      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1108  alphaPorosity_1108      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1109  alphaPorosity_1109      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1110  alphaPorosity_1110      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1111  alphaPorosity_1111      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1112  alphaPorosity_1112      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1113  alphaPorosity_1113      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1114  alphaPorosity_1114      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1115  alphaPorosity_1115      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1116  alphaPorosity_1116      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1117  alphaPorosity_1117      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1118  alphaPorosity_1118      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1119  alphaPorosity_1119      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1120  alphaPorosity_1120      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1121  alphaPorosity_1121      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1122  alphaPorosity_1122      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1123  alphaPorosity_1123      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1124  alphaPorosity_1124      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1125  alphaPorosity_1125      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1126  alphaPorosity_1126      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1127  alphaPorosity_1127      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1128  alphaPorosity_1128      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1129  alphaPorosity_1129      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1130  alphaPorosity_1130      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1131  alphaPorosity_1131      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1132  alphaPorosity_1132      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1133  alphaPorosity_1133      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1134  alphaPorosity_1134      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1135  alphaPorosity_1135      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1136  alphaPorosity_1136      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1137  alphaPorosity_1137      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1138  alphaPorosity_1138      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1139  alphaPorosity_1139      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1140  alphaPorosity_1140      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1141  alphaPorosity_1141      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1142  alphaPorosity_1142      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1143  alphaPorosity_1143      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1144  alphaPorosity_1144      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1145  alphaPorosity_1145      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1146  alphaPorosity_1146      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1147  alphaPorosity_1147      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1148  alphaPorosity_1148      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1149  alphaPorosity_1149      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1150  alphaPorosity_1150      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+       1151  alphaPorosity_1151      c     0.000000E+00   0.000000E+00+0.000000E+00j     1.000000E+00          l
+
+
+
++--------------------------------------------------------------------------+
+|                       Running Coloring Solver                            |
++--------------------------------------------------------------------------+
+I/O    : uncollated
+Case   : /home/dafoamuser/mount
+nProcs : 4
+Hosts  :
+(
+    (af16470b1745 4)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+Create time
+
+Overriding DebugSwitches according to controlDict
+    SolverPerformance 0;
+
+Create mesh for time = 0
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model SpalartAllmarasFv3
+Selecting patchDistMethod meshWaveFrozen
+Checking if Coloring file exists..
+dRdWCon Created. 5 s
+Calculating dRdW Coloring... 5 s
+Calculating dRdW Coloring..
+Parallel Distance 2 Graph Coloring....
+MaxCols: 129
+AllNonZeros: 7713995
+nUniqueCols: 28578
+ColorSweep: 0   6 s
+number of uncolored: 103715 4
+ColorSweep: 100   9 s
+number of uncolored: 66439 4
+ColorSweep: 200   12 s
+number of uncolored: 32105 4
+ColorSweep: 300   15 s
+number of uncolored: 3014 4
+ColorSweep: 339   16 s
+number of uncolored: 0 0
+Global ColorSweep: 0   16 s
+Number of Uncolored: 6171 4
+Global ColorSweep: 100   18 s
+Number of Uncolored: 4922 4
+Global ColorSweep: 200   19 s
+Number of Uncolored: 3526 4
+Global ColorSweep: 300   21 s
+Number of Uncolored: 1725 4
+Global ColorSweep: 398   22 s
+Number of Uncolored: 0 0
+Ncolors: 399
+Validating Coloring...
+No Conflicting Colors Found!
+ nJacConColors: 399
+Writing Colors to dRdWColoring_4
+Calculating dRdW Coloring... Completed! 22 s
+Checking if Coloring file exists..
+    Adding all faces of patches 1(inlet) ...
+    Found matching patch inlet with 30 faces.
+dFdWCon Created!
+Setting up dFdWCon..
+dFdWCon Created. 23 s
+Calculating dFdW PL-part1 Coloring... 23 s
+Calculating dFdW Coloring..
+Parallel Distance 2 Graph Coloring....
+MaxCols: 37
+AllNonZeros: 1092
+nUniqueCols: 512
+ColorSweep: 0   23 s
+number of uncolored: 499 1
+ColorSweep: 66   23 s
+number of uncolored: 0 0
+Global ColorSweep: 0   23 s
+Number of Uncolored: 0 0
+Global ColorSweep: 0   23 s
+Number of Uncolored: 0 0
+Ncolors: 67
+Validating Coloring...
+No Conflicting Colors Found!
+ nJacConColors: 67
+Writing Colors to dFdWColoring_PL_part1_4
+Calculating dFdW PL-part1 Coloring... Completed23 s
+Checking if Coloring file exists..
+    Adding all faces of patches 1(outlet) ...
+    Found matching patch outlet with 0 faces.
+dFdWCon Created!
+Setting up dFdWCon..
+dFdWCon Created. 23 s
+Calculating dFdW PL-part2 Coloring... 23 s
+Calculating dFdW Coloring..
+Parallel Distance 2 Graph Coloring....
+MaxCols: 37
+AllNonZeros: 2091
+nUniqueCols: 0
+ColorSweep: 0   23 s
+number of uncolored: 948 1
+ColorSweep: 69   23 s
+number of uncolored: 0 0
+Global ColorSweep: 0   23 s
+Number of Uncolored: 0 0
+Global ColorSweep: 0   23 s
+Number of Uncolored: 0 0
+Ncolors: 70
+Validating Coloring...
+No Conflicting Colors Found!
+ nJacConColors: 70
+Writing Colors to dFdWColoring_PL_part2_4
+Calculating dFdW PL-part2 Coloring... Completed23 s
+Finalising parallel run
+
+List of user-set options:
+
+                                    Name   Value                used
+                             alpha_for_y = full                  yes
+                         constr_viol_tol = 1e-07                 yes
+                        file_print_level = 5                     yes
+                   hessian_approximation = limited-memory        yes
+              limited_memory_max_history = 25                    yes
+                           linear_solver = mumps                 yes
+                                max_iter = 50                    yes
+                             mu_strategy = adaptive              yes
+                      nlp_scaling_method = none                  yes
+                             output_file = opt_IPOPT.txt         yes
+                             print_level = 5                     yes
+                      print_user_options = yes                   yes
+                                recalc_y = yes                   yes
+                                      sb = yes                   yes
+                                     tol = 1e-07                 yes
+This is Ipopt version 3.13.5, running with linear solver mumps.
+NOTE: Other linear solvers might be more efficient (see Ipopt documentation).
+
+Number of nonzeros in equality constraint Jacobian...:        0
+Number of nonzeros in inequality constraint Jacobian.:     1152
+Number of nonzeros in Lagrangian Hessian.............:        0
+
+
+
++--------------------------------------------------------------------------+
+|                  Evaluating Objective Functions 001                      |
++--------------------------------------------------------------------------+
+Design Variables: 
+OrderedDict([('alphaPorosity', array([99.9999, 99.9999, 99.9999, ..., 99.9999, 99.9999, 99.9999]))])
+DVGeo PointSet UpToDate: False
+Updating DVGeo PointSet....
+DVGeo PointSet UpToDate: True
+Warping the volume mesh....
+Setting up primal boundary conditions based on pyOptions: 
+Setting primal boundary conditions...
+Setting U = (0.1 0 0) at inlet
+Setting primal boundary conditions...
+Setting p = 0 at outlet
+Setting primal boundary conditions...
+Setting nuTilda = 0.0001 at inlet
+I/O    : uncollated
+Setting nut wall BC for wallBoundary. BCType=nutUSpaldingWallFunction
+Setting nut wall BC for symmetricBoundary. BCType=nutUSpaldingWallFunction
+Running Primal Solver 001
+Previous solution time -1e+10 not found and nothing deleted.
+No finite volume options present
+
+Starting time loop
+
+Checking mesh quality for time = 0
+    Overall domain bounding box (-0.02060000000000417 -0.0254 -0.0005000000000059401) (0.2900000000000023 0.02540000000000658 0.0005000000000059401)
+    Mesh has 3 geometric (non-empty/wedge) directions 3{1}
+    Mesh has 3 solution (non-empty) directions 3{1}
+    Boundary openness (-2.743042691213774e-17 -1.056868513398673e-18 -6.682618335272039e-16) OK.
+    Max cell openness = 3.286165104505535e-16 OK.
+    Max aspect ratio = 8.140700133644552 OK.
+    Minimum face area = 1.68589464696608e-07. Maximum face area = 5.144509086982136e-06.  Face area magnitudes OK.
+    Min volume = 1.690202501225076e-10. Max volume = 3.835791463261388e-09.  Total volume = 1.451603999999148e-05.  Cell volumes OK.
+    Mesh non-orthogonality Max: 5.950448517546263 average: 1.63033986412243
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.2605748105966285 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+Time = 1
+
+U Initial residual: (0.9999999999999721 0.9999999999999999 0.9959046705687391)
+U   Final residual: (0.01786456206609041 0.0709816725529032 0.03532393753545066)
+p Initial residual: 1
+p   Final residual: 0.09510045908323045
+Time step continuity errors : sum local = 17.93994496568485
+                                 global = -4.765706823181649
+                             cumulative = -4.765706823181649
+nuTilda Initial residual: 0.9999999999993944
+          Final residual: 0.04922435856963317
+Bounding nuTilda>1e-16
+yPlus min: 11.53364907624758 max: 66.51348763505709 mean: 40.61834441150784
+PL-part1-totalPressure: -31903333.56871045
+PL-part2-totalPressure: -76761.68489821139
+ExecutionTime = 24.38 s  ClockTime = 28 s
+
+Time = 100
+
+U Initial residual: (0.01363437067936182 0.00746059166328814 0.06074931329635151)
+U   Final residual: (0.001115889100105537 0.0007185376052438886 0.004320836720716498)
+p Initial residual: 0.1334229873309414
+p   Final residual: 0.007643300662758106
+Time step continuity errors : sum local = 19.36462412061427
+                                 global = 0.1439635830512551
+                             cumulative = -4.621743240130394
+nuTilda Initial residual: 0.02434186554536828
+          Final residual: 0.002176941080695166
+Bounding nuTilda>1e-16
+yPlus min: 9.519224736498195 max: 1247.650105267295 mean: 312.9302022553952
+PL-part1-totalPressure: -6837459.633901049
+PL-part2-totalPressure: -1210227.11345623
+ExecutionTime = 26.18 s  ClockTime = 30 s
+
+Time = 200
+
+U Initial residual: (0.004396713370333856 0.004576001030410014 0.06255999781412584)
+U   Final residual: (0.0001963634012702031 0.0001826261080971198 0.003282618688807565)
+p Initial residual: 0.04444261122471784
+p   Final residual: 0.004259204860979236
+Time step continuity errors : sum local = 5.431026217333385
+                                 global = -0.09906210139753553
+                             cumulative = -4.72080534152793
+nuTilda Initial residual: 0.02975558287774988
+          Final residual: 0.002128875220845968
+Bounding nuTilda>1e-16
+yPlus min: 8.082013983944691 max: 1488.440423935145 mean: 290.5403077928434
+PL-part1-totalPressure: -7986018.929618013
+PL-part2-totalPressure: -778494.7132883522
+ExecutionTime = 28.02 s  ClockTime = 32 s
+
+Time = 300
+
+U Initial residual: (0.001849511051091974 0.001114598578414831 0.1272584722000653)
+U   Final residual: (9.782955795398937e-05 2.318557605843372e-05 0.00986555711443224)
+p Initial residual: 0.04360364190571536
+p   Final residual: 0.003578626814106063
+Time step continuity errors : sum local = 3.729048482897106
+                                 global = -0.09553324051895103
+                             cumulative = -4.816338582046881
+nuTilda Initial residual: 0.03282435514278783
+          Final residual: 0.001998604414712667
+Bounding nuTilda>1e-16
+yPlus min: 4.376124102070979 max: 1292.53425651473 mean: 263.720751247614
+PL-part1-totalPressure: -189193444.8675998
+PL-part2-totalPressure: -334958.1324027957
+ExecutionTime = 29.91 s  ClockTime = 34 s
+
+Time = 400
+
+U Initial residual: (0.001249854697971439 0.001003276181900433 0.1022050645690545)
+U   Final residual: (5.763367301743504e-05 1.901274582511531e-05 0.007733528479041084)
+p Initial residual: 0.006835160988136371
+p   Final residual: 0.0004142328434820067
+Time step continuity errors : sum local = 2.340965684562843
+                                 global = -0.02020241888560869
+                             cumulative = -4.836541000932489
+nuTilda Initial residual: 0.03282686649471877
+          Final residual: 0.001998324026400155
+Bounding nuTilda>1e-16
+yPlus min: 3.442092862985566 max: 1552.442526040601 mean: 299.3539589844827
+PL-part1-totalPressure: -6239702791.4981
+PL-part2-totalPressure: -119234.1085143866
+ExecutionTime = 31.73 s  ClockTime = 35 s
+
+Time = 500
+
+U Initial residual: (0.001117550363948158 0.001011507224644681 0.08164462726850918)
+U   Final residual: (5.203178968018174e-05 2.044707816391869e-05 0.007588143651943176)
+p Initial residual: 1.284125252655366e-05
+p   Final residual: 7.885822128275713e-07
+Time step continuity errors : sum local = 2.871493799775482
+                                 global = -0.05198520417795317
+                             cumulative = -4.888526205110442
+nuTilda Initial residual: 0.03282687202719706
+          Final residual: 0.001998323558796438
+Bounding nuTilda>1e-16
+yPlus min: 6.825143141841749 max: 1590.121379118508 mean: 355.2602969948924
+PL-part1-totalPressure: 3286718841232.818
+PL-part2-totalPressure: -44568.44296508095
+ExecutionTime = 33.63 s  ClockTime = 37 s
+
+Time = 542
+Minimal residual 9.150707232588629e-07 satisfied the prescribed tolerance 1e-06
+
+PL-part1-totalPressure: 91227078344970.97
+PL-part2-totalPressure: -35023.52212209778
+Printing Primal Residual Statistics.
+U Residual Norm2: (5222307940574270 2.35726765550922e+16 39.80591814454954)
+U Residual Mean: (7531475643138.022 17532253919257.13 0.03000506926468076)
+U Residual Max: (834670982235332 5603265723586853 17.29371852074599)
+p Residual Norm2: 83351.27089526079
+p Residual Mean: 125.898677688794
+p Residual Max: 20354.06987007261
+nuTilda Residual Norm2: 3.449443031793877e+24
+nuTilda Residual Mean: 2.14262194833395e+21
+nuTilda Residual Max: 1.043506457297345e+24
+phi Residual Norm2: 92.71984215949725
+phi Residual Mean: 0.1532344337345186
+phi Residual Max: 10.97525771956426
+End
+
+Objective Functions: 
+{'PL': 91227078309947.45, 'fail': False}
+Flow Runtime: 11.7853
+
+
++--------------------------------------------------------------------------+
+|              Evaluating Objective Function Sensitivities 001             |
++--------------------------------------------------------------------------+
+writeDeformedFFDs is deprecated since v3.0.1!
+Moving time 542 to 0.00000001
+Running adjoint Solver 001
+dRdWT Jacobian Free created!
+Computing dRdWTPC 39 s
+Initializing dRdWCon. 39 s
+dRdWCon Created. 42 s
+Reading Coloring dRdWColoring_4
+Validating Coloring...
+No Conflicting Colors Found!
+Partial derivative matrix created. 42 s
+dRdWTPC: 0 of 399, ExecutionTime: 42 s

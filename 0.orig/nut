@@ -33,27 +33,17 @@ boundaryField
     }
     wallBoundary
     {
-        type            zeroGradient;
+        type            nutUSpaldingWallFunction;
+        value           uniform 0;
     }
     symmetricBoundary
     {
-        type            symmetry;
-    }
-    /*
-    upperWall
-    {
         type            nutUSpaldingWallFunction;
         value           uniform 0;
     }
-    lowerWall
-    {
-        type            nutUSpaldingWallFunction;
-        value           uniform 0;
-    }
-    */
     frontAndBack
     {
-        type            empty;
+        type            symmetry;
     }
 }
 

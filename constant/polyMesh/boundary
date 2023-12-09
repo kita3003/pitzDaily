@@ -20,35 +20,35 @@ FoamFile
     inlet
     {
         type            patch;
-        nFaces          24;
-        startFace       2232;
+        nFaces          30;
+        startFace       24170;
     }
     outlet
     {
         type            patch;
-        nFaces          8;
-        startFace       2256;
+        nFaces          57;
+        startFace       24200;
     }
     wallBoundary
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          64;
-        startFace       2264;
+        nFaces          223;
+        startFace       24257;
     }
     symmetricBoundary
     {
-        type            symmetry;
-        inGroups        1(symmetry);
-        nFaces          48;
-        startFace       2328;
+        type            wall;
+        inGroups        1(wall);
+        nFaces          250;
+        startFace       24480;
     }
     frontAndBack
     {
-        type            empty;
-        inGroups        1(empty);
-        nFaces          2304;
-        startFace       2376;
+        type            symmetry;
+        inGroups        1(symmetry);
+        nFaces          24450;
+        startFace       24730;
     }
 )
 

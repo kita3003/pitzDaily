@@ -30,30 +30,22 @@ boundaryField
     {
         type            zeroGradient;
     }
+
     wallBoundary
-    {
-        type            zeroGradient;
-    }
-    symmetricBoundary
-    {
-        type            symmetry;
-    }
-/*
-    upperWall
     {
         type            fixedValue;
         value           uniform 0;
     }
 
-    lowerWall
+    symmetricBoundary
     {
         type            fixedValue;
         value           uniform 0;
     }
-*/
+
     frontAndBack
     {
-        type            empty;
+        type            symmetry;
     }
 }
 
