@@ -30,7 +30,13 @@ gcomm = MPI.COMM_WORLD
 U0 = 0.1
 p0 = 0.0
 nuTilda0 = 1.0e-4
-nCells = 1152
+nCells = 12225
+# nCells = 6113
+# nCells = 3057
+# nCells = 1529
+# nCells = 765
+# nCells = 49
+# nCells = 13  Signal code:  (-6)
 
 # Set the parameters for optimization
 daOptions = {
@@ -79,7 +85,7 @@ meshOptions = {
     "gridFile": os.getcwd(),
     "fileType": "OpenFOAM",
     # point and normal for the symmetry plane
-    "symmetryPlanes": [[[0.0, 0.0, 0], [0.0, 0.0, -1.0]]],
+    "symmetryPlanes": [[[0.0, 0.0, -0.0005], [0.0, 0.0, 1.0]], [[0.0, 0.0, 0.0005], [0.0, 0.0, 1.0]]],
 }
 
 # options for optimizers
@@ -193,6 +199,7 @@ if args.task == "opt":
     sol = opt(optProb, sens=optFuncs.calcObjFuncSens, storeHistory=histFile)
     if gcomm.rank == 0:
         print(sol)
+    exit(0)
 
 elif args.task == "runPrimal":
 

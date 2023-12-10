@@ -33,14 +33,12 @@ boundaryField
 
     wallBoundary
     {
-        type            fixedValue;
-        value           uniform 0;
+        type            zeroGradient;
     }
 
     symmetricBoundary
     {
-        type            fixedValue;
-        value           uniform 0;
+        type            symmetry;
     }
 
     frontAndBack

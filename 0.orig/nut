@@ -26,26 +26,27 @@ boundaryField
         type            calculated;
         value           uniform 0;
     }
+
     outlet
     {
         type            calculated;
         value           uniform 0;
     }
+
     wallBoundary
     {
-        type            nutUSpaldingWallFunction;
-        value           uniform 0;
+        type            zeroGradient;
     }
+
     symmetricBoundary
     {
-        type            nutUSpaldingWallFunction;
-        value           uniform 0;
+        type            symmetry;
     }
+
     frontAndBack
     {
         type            symmetry;
     }
 }
-
 
 // ************************************************************************* //
