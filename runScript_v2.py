@@ -199,7 +199,6 @@ if args.task == "opt":
     sol = opt(optProb, sens=optFuncs.calcObjFuncSens, storeHistory=histFile)
     if gcomm.rank == 0:
         print(sol)
-    exit(0)
 
 elif args.task == "runPrimal":
 
