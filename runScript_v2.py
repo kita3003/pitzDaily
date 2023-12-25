@@ -30,13 +30,8 @@ gcomm = MPI.COMM_WORLD
 U0 = 0.1
 p0 = 0.0
 nuTilda0 = 1.0e-4
-nCells = 12225
-# nCells = 6113
-# nCells = 3057
-# nCells = 1529
-# nCells = 765
-# nCells = 49
-# nCells = 13  Signal code:  (-6)
+nCells = 1152
+# nCells = 12225
 
 # Set the parameters for optimization
 daOptions = {
@@ -135,7 +130,8 @@ def alphaPorosity(val, geo):
 
 DVGeo = DVGeometry("./FFD/dummyFFD.xyz")
 # We need to add a dummy ref axis for defining GeoDVGlobal
-DVGeo.addRefAxis("dummyAxis", xFraction=0.25, alignIndex="k")
+#- DVGeo.addRefAxis("dummyAxis", xFraction=0.25, alignIndex="k")
+DVGeo.addRefAxis("dummyAxis", xFraction=0.5, alignIndex="k")
 
 alphaPorosity0 = np.zeros(nCells, dtype="d")
 # modify one alpha value. This can be used to verify the adjoint derivative with the finite-difference method

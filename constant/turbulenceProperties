@@ -19,11 +19,12 @@ simulationType RAS;
 
 RAS
 {
-    RASModel        SpalartAllmarasFv3;
+    // RASModel        SpalartAllmarasFv3;
+    RASModel        dummy;
 
-    turbulence      on;
+    turbulence      off;
 
-    printCoeffs     on;
+    printCoeffs     off;
 }
 
 
