@@ -131,7 +131,8 @@ def alphaPorosity(val, geo):
 DVGeo = DVGeometry("./FFD/dummyFFD.xyz")
 # We need to add a dummy ref axis for defining GeoDVGlobal
 #- DVGeo.addRefAxis("dummyAxis", xFraction=0.25, alignIndex="k")
-DVGeo.addRefAxis("dummyAxis", xFraction=0.5, alignIndex="k")
+# DVGeo.addRefAxis("dummyAxis", xFraction=0.5, alignIndex="k")
+DVGeo.addRefAxis("dummyAxis", xFraction=0.01, alignIndex="k")
 
 alphaPorosity0 = np.zeros(nCells, dtype="d")
 # modify one alpha value. This can be used to verify the adjoint derivative with the finite-difference method

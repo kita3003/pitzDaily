@@ -35,11 +35,11 @@ vertices
 blocks
 (
     hex (3 2 6 7 0 1 5 4)
-    (100 10 1)
+    (100 8 1)
     simpleGrading (1 1 1)
 
     hex (7 6 10 11 4 5 9 8)
-    (100 20 1)
+    (100 16 1)
     simpleGrading (1 1 1)
 );
 
