@@ -19,7 +19,6 @@ simulationType RAS;
 
 RAS
 {
-    // RASModel        SpalartAllmarasFv3;
     RASModel        dummy;
 
     turbulence      off;

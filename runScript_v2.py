@@ -30,8 +30,7 @@ gcomm = MPI.COMM_WORLD
 U0 = 0.1
 p0 = 0.0
 nuTilda0 = 1.0e-4
-nCells = 1152
-# nCells = 12225
+nCells = 3000
 
 # Set the parameters for optimization
 daOptions = {
@@ -40,6 +39,7 @@ daOptions = {
     "useAD": {"mode": "reverse"},
     "primalMinResTol": 1.0e-6,
     "primalMinResTolDiff": 1.0e4,
+    "writeSensMap":["shapey"],
     "primalBC": {
         "U0": {"variable": "U", "patches": ["inlet"], "value": [U0, 0.0, 0.0]},
         "p0": {"variable": "p", "patches": ["outlet"], "value": [p0]},
@@ -72,7 +72,7 @@ daOptions = {
         "phi": 1.0,
     },
     "adjPCLag": 5,
-    "designVar": {},
+    "designVar": {"alpha": {"designVarType": "AOA", "patches": ["inlet"], "flowAxis": "x", "normalAxis": "y"},},
 }
 
 # mesh warping parameters, users need to manually specify the symmetry plane and their normals
