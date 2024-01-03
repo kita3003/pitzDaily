@@ -62,7 +62,22 @@ daOptions = {
                 "scale": -1.0 / (0.5 * U0 * U0),
                 "addToAdjoint": True,
             }
-        }
+        },
+        "VOLUME": {
+            "part1": {
+                "type": "variableVolSum",
+                "source": "boxToCell",
+                "min": [-50.0, -50.0, -50.0],
+                "max": [50.0, 50.0, 50.0],
+                "varName": "alphaPorosity",
+                "varType": "scalar",
+                "component": 0,
+                "isSquare": 0,
+                "scale": 1.0,
+                "addToAdjoint": True,
+                "divByTotalVol": 1,
+            },
+        },
     },
     "adjEqnOption": {"gmresRelTol": 1.0e-6, "gmresMaxIters": 2000, "gmresRestart": 2000, "pcFillLevel": 1, "jacMatReOrdering": "rcm"},
     "normalizeStates": {
@@ -130,9 +145,9 @@ def alphaPorosity(val, geo):
 
 DVGeo = DVGeometry("./FFD/dummyFFD.xyz")
 # We need to add a dummy ref axis for defining GeoDVGlobal
-#- DVGeo.addRefAxis("dummyAxis", xFraction=0.25, alignIndex="k")
-# DVGeo.addRefAxis("dummyAxis", xFraction=0.5, alignIndex="k")
-DVGeo.addRefAxis("dummyAxis", xFraction=0.01, alignIndex="k")
+# DVGeo.addRefAxis("dummyAxis", xFraction=0.25, alignIndex="k")
+DVGeo.addRefAxis("dummyAxis", xFraction=0.5, alignIndex="k")
+# DVGeo.addRefAxis("dummyAxis", xFraction=0.01, alignIndex="k")
 
 alphaPorosity0 = np.zeros(nCells, dtype="d")
 # modify one alpha value. This can be used to verify the adjoint derivative with the finite-difference method
@@ -164,6 +179,7 @@ print('5555555555555555555555555555555555555555555555555555555555555555555555555
 DVCon = DVConstraints()
 DVCon.setDVGeo(DVGeo)
 DVCon.setSurface(DASolver.getTriangulatedMeshSurface(groupName=DASolver.designSurfacesGroup))
+
 # =============================================================================
 # Initialize optFuncs for optimization
 # =============================================================================
@@ -185,6 +201,8 @@ if args.task == "opt":
     DVCon.addConstraintsPyOpt(optProb)
 
     optProb.addObj("PL", scale=1)
+    #Add Contraint Volume
+    optProb.addCon("VOLUME", lower=0.0 , upper=1e-05 , scale=1)
 
     if gcomm.rank == 0:
         print(optProb)
