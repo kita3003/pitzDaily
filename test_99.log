@@ -1,0 +1,94 @@
+[2024/01/07 08:26:26]  [S]----------------------------------------------
+[2024/01/07 08:26:26]  Sun Jan 7 08:26:01 EST 2024
+[2024/01/07 08:26:26]  [S]----------------------------------------------
+[2024/01/07 08:26:26]  /bin/bash: /home/dafoamuser/dafoam/packages/miniconda3/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+[2024/01/07 08:26:26]  Delete everything and resume to the default setup (y/n)?Cleaning...
+[2024/01/07 08:26:26]  /bin/bash: /home/dafoamuser/dafoam/packages/miniconda3/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+[2024/01/07 08:26:26]  /*---------------------------------------------------------------------------*\
+[2024/01/07 08:26:26]  | =========                 |                                                 |
+[2024/01/07 08:26:26]  | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+[2024/01/07 08:26:26]  |  \\    /   O peration     | Version:  v1812                                 |
+[2024/01/07 08:26:26]  |   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+[2024/01/07 08:26:26]  |    \\/     M anipulation  |                                                 |
+[2024/01/07 08:26:26]  \*---------------------------------------------------------------------------*/
+[2024/01/07 08:26:26]  Build  : v1812 OPENFOAM=1812
+[2024/01/07 08:26:26]  Arch   : "LSB;label=32;scalar=64"
+[2024/01/07 08:26:26]  Exec   : blockMesh
+[2024/01/07 08:26:26]  Date   : Jan 07 2024
+[2024/01/07 08:26:26]  Time   : 08:26:26
+[2024/01/07 08:26:26]  Host   : 960ad460c7df
+[2024/01/07 08:26:26]  PID    : 1222
+[2024/01/07 08:26:26]  I/O    : uncollated
+[2024/01/07 08:26:26]  Case   : /home/dafoamuser/mount
+[2024/01/07 08:26:26]  nProcs : 1
+[2024/01/07 08:26:26]  trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+[2024/01/07 08:26:26]  fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+[2024/01/07 08:26:26]  allowSystemOperations : Allowing user-supplied system call operations
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]  // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+[2024/01/07 08:26:26]  Create time
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]  Overriding DebugSwitches according to controlDict
+[2024/01/07 08:26:26]      SolverPerformance 0;
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]  Creating block mesh from
+[2024/01/07 08:26:26]      "/home/dafoamuser/mount/system/blockMeshDict"
+[2024/01/07 08:26:26]  Creating block edges
+[2024/01/07 08:26:26]  No non-planar block faces defined
+[2024/01/07 08:26:26]  Creating topology blocks
+[2024/01/07 08:26:26]  Creating topology patches
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]  Creating block mesh topology
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]  Check topology
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]  	Basic statistics
+[2024/01/07 08:26:26]  		Number of internal faces : 1
+[2024/01/07 08:26:26]  		Number of boundary faces : 10
+[2024/01/07 08:26:26]  		Number of defined boundary faces : 10
+[2024/01/07 08:26:26]  		Number of undefined boundary faces : 0
+[2024/01/07 08:26:26]  	Checking patch -> block consistency
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]  Creating block offsets
+[2024/01/07 08:26:26]  Creating merge list .
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]  Creating polyMesh from blockMesh
+[2024/01/07 08:26:26]  Creating patches
+[2024/01/07 08:26:26]  Creating cells
+[2024/01/07 08:26:26]  Creating points with scale 0.001
+[2024/01/07 08:26:26]      Block 0 cell size :
+[2024/01/07 08:26:26]          i : 0.0003 .. 0.0003000000000000007
+[2024/01/07 08:26:26]          j : 0.0005 .. 0.0005
+[2024/01/07 08:26:26]          k : 0.001 .. 0.001
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]      Block 1 cell size :
+[2024/01/07 08:26:26]          i : 0.0003 .. 0.0003000000000000007
+[2024/01/07 08:26:26]          j : 0.0005 .. 0.0005
+[2024/01/07 08:26:26]          k : 0.001 .. 0.001
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]  There are no merge patch pairs
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]  Writing polyMesh with 0 cellZones
+[2024/01/07 08:26:26]  ----------------
+[2024/01/07 08:26:26]  Mesh Information
+[2024/01/07 08:26:26]  ----------------
+[2024/01/07 08:26:26]    boundingBox: (0 0 0) (0.03 0.015 0.001)
+[2024/01/07 08:26:26]    nPoints: 6262
+[2024/01/07 08:26:26]    nCells: 3000
+[2024/01/07 08:26:26]    nFaces: 12130
+[2024/01/07 08:26:26]    nInternalFaces: 5870
+[2024/01/07 08:26:26]  ----------------
+[2024/01/07 08:26:26]  Patches
+[2024/01/07 08:26:26]  ----------------
+[2024/01/07 08:26:26]    patch 0 (start: 5870 size: 30) name: inlet
+[2024/01/07 08:26:26]    patch 1 (start: 5900 size: 10) name: outlet
+[2024/01/07 08:26:26]    patch 2 (start: 5910 size: 120) name: wallBoundary
+[2024/01/07 08:26:26]    patch 3 (start: 6030 size: 100) name: symmetricBoundary
+[2024/01/07 08:26:26]    patch 4 (start: 6130 size: 6000) name: frontAndBack
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]  End
+[2024/01/07 08:26:26]  
+[2024/01/07 08:26:26]  [E]----------------------------------------------
+[2024/01/07 08:26:26]  Sun Jan 7 08:26:26 EST 2024
+[2024/01/07 08:26:26]  [E]----------------------------------------------
