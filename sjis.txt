@@ -1,0 +1,6 @@
+エンコード：SJIS
+改行コード：CRLF
+４５６
+７８９
+１２３
+tortoiseGit
